@@ -1,0 +1,6 @@
+{
+  "name": "AL DENTE — Pastas artesanales",
+  "description": "Pastas artesanales frescas congeladas en Lomas de Zamora, Zona Sur. El sabor del domingo, todos los días.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

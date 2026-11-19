@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", ui-rounded, system-ui, sans-serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #F7F2E6;
+  --color-bordo: #73091D;
+  --color-arena: #F2D4AE;
+  --color-oliva: #736316;
+  --color-azul: #07598C;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F7F2E6;
+    color: #2B1712;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+/* Subtle artisanal flour-paper grain for warm neighborhood atmosphere */
+.bg-artisanal-paper {
+  background-color: #F7F2E6;
+  background-image: radial-gradient(rgba(115, 9, 29, 0.035) 1px, transparent 0),
+    radial-gradient(rgba(115, 99, 22, 0.03) 1px, transparent 0);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Scalloped ravioli / grocer stamp frame edge */
+.ravioli-stamp-card {
+  position: relative;
+  background-color: #FFFBF3;
+  border: 2px solid #E4C89E;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 28px -12px rgba(115, 9, 29, 0.12);
+}
+
+.ravioli-stamp-card::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1.5px dashed rgba(115, 9, 29, 0.22);
+  border-radius: 0.9rem;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
